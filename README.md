@@ -44,7 +44,7 @@ Paste to one or more overrides
 
 Select your preferences in `Plugins/Escriba/Settings` menu:
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/settings.png' width="200">
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/settings.png' width="500">
 
 
 ## License
