@@ -20,7 +20,7 @@ It works with:
 
 Symbols
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteAll.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
 
 layerStyles
 
