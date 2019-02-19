@@ -75,12 +75,9 @@ var exports =
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
+var overrideToCopy = function overrideToCopy(context) {
 
-exports["default"] = function (context) {
-  context.document.showMessage("It's alive 🙌");
+		UI.message('Select one Symbol override to copy');
 };
 
 /***/ })

@@ -1,17 +1,33 @@
 {
   "compatibleVersion": 3,
   "bundleVersion": 1,
+  "icon": "icon.png",
   "commands": [
     {
-      "name": "my-command",
-      "identifier": "my-command-identifier",
-      "script": "./my-command.js"
+      "name": "Copy",
+      "identifier": "copy-identifier",
+      "shortcut": "ctrl command z",
+      "script": "./copy.js"
+    },
+    {
+      "name": "Paste",
+      "identifier": "paste-identifier",
+      "shortcut": "ctrl command x",
+      "script": "./paste.js"
+    },
+    {
+      "name": "Settings",
+      "identifier": "settings-identifier",
+      "script": "./settings.js"
     }
   ],
   "menu": {
     "title": "Escriba",
     "items": [
-      "my-command-identifier"
+      "copy-identifier",
+      "paste-identifier",
+      "-",
+      "settings-identifier"
     ]
   }
 }

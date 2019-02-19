@@ -1,13 +1,14 @@
 {
   "name": "escriba",
   "version": "0.1.0",
-  "engines": {
-    "sketch": ">=3.0"
-  },
+  "description": "Copy & Paste overrides",
   "skpm": {
     "name": "Escriba",
     "manifest": "src/manifest.json",
-    "main": "escriba.sketchplugin"
+    "main": "Escriba.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
   },
   "scripts": {
     "build": "skpm-build",
