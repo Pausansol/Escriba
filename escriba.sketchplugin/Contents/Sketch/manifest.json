@@ -1,0 +1,40 @@
+{
+  "compatibleVersion": 53,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "appcast": "https://raw.githubusercontent.com/pausansol/escriba/master/appcast.xml",
+  "commands": [
+    {
+      "name": "Copy",
+      "identifier": "copy-identifier",
+      "shortcut": "ctrl command z",
+      "script": "copy.js"
+    },
+    {
+      "name": "Paste",
+      "identifier": "paste-identifier",
+      "shortcut": "ctrl command x",
+      "script": "paste.js"
+    },
+    {
+      "name": "Settings",
+      "identifier": "settings-identifier",
+      "script": "settings.js"
+    }
+  ],
+  "menu": {
+    "title": "Escriba",
+    "items": [
+      "copy-identifier",
+      "paste-identifier",
+      "-",
+      "settings-identifier"
+    ]
+  },
+  "version": "1.0.0",
+  "description": "Copy & Paste overrides",
+  "name": "Escriba",
+  "disableCocoaScriptPreprocessor": true,
+  "author": "Pausansol",
+  "authorEmail": "pausansol@gmail.com"
+}
