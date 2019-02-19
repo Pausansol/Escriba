@@ -20,23 +20,23 @@ It works with:
 
 Symbols
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/tree/v1.0.0/images/pasteall.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
 
 layerStyles
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/tree/v1.0.0/images/pasteall.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
 
 textStyles
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/tree/v1.0.0/images/pasteall.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
 
 Text content
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/tree/v1.0.0/images/pasteall.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
 
 Paste to one or more overrides
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/tree/v1.0.0/images/pasteall.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
 
 
 ## License

@@ -1,7 +1,8 @@
 {
-  "compatibleVersion": 3,
+  "compatibleVersion": 53,
   "bundleVersion": 1,
   "icon": "icon.png",
+  "appcast": "https://raw.githubusercontent.com/pausansol/escriba/master/appcast.xml",
   "commands": [
     {
       "name": "Copy",
@@ -30,11 +31,10 @@
       "settings-identifier"
     ]
   },
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Copy & Paste overrides",
   "name": "Escriba",
   "disableCocoaScriptPreprocessor": true,
-  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
   "author": "Pausansol",
   "authorEmail": "pausansol@gmail.com"
 }

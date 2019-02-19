@@ -92,7 +92,7 @@ exports['default'] = function (context) {
 			pasteSelected(selectedOverrideId, context);
 		});
 	} else {
-		UI.message('⚠️ Select one Symbol override to paste copied override ⚠️');
+		UI.message('⚠️ Select one Symbol override to paste ⚠️');
 		(0, _analytics2['default'])(context, "Escriba UI", "No override selected to paste");
 	}
 };
