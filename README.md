@@ -13,28 +13,36 @@ It's simple:
 
 * Select an override and Copy `Control + Command + Z`
 
-* Select one or more overrides and Paste `Control + Command + X`
+* Select one or more overrides and Paste `Control + Command + X` 🙌 🎉
 
 
 It works with:
 
 Symbols
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteAll.gif'>
 
 layerStyles
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteLayerStyle.gif'>
 
 textStyles
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteLayerStyle.gif'>
 
 Text content
 
 <img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
 
+Style and content at the same time
+
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteStyleAndContent.gif'>
+
 Paste to one or more overrides
+
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
+
+Select your preferences in `Plugins/Escriba/Settings` menu:
 
 <img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
 
