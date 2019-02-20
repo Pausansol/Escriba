@@ -20,11 +20,11 @@ It works with:
 
 Symbols
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteSymbol.gif'>
 
 layerStyles
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteLayerStyle.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteTextStyle.gif'>
 
 textStyles
 
@@ -32,7 +32,7 @@ textStyles
 
 Text content
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteall.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteContent.gif'>
 
 Style and content at the same time
 
