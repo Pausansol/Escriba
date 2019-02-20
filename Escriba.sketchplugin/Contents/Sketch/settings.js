@@ -80,6 +80,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports['default'] = function (context) {
+  (0, _analytics2['default'])(context, "Escriba settings", "Open");
 
   // create the alertWindow UI
   var alertWindow = (0, _createAlertWindow2['default'])(context);
@@ -152,6 +153,7 @@ exports['default'] = function (context) {
     Settings.setSettingForKey('ValuetextStyle', textStyleCheckbox.state());
     Settings.setSettingForKey('ValuestringValue', stringValueCheckbox.state());
     Settings.setSettingForKey('ValuesymbolID', symbolIDCheckbox.state());
+    (0, _analytics2['default'])(context, "Escriba settings", "Save");
   }
 };
 
@@ -159,9 +161,13 @@ var _createAlertWindow = __webpack_require__(1);
 
 var _createAlertWindow2 = _interopRequireDefault(_createAlertWindow);
 
+var _analytics = __webpack_require__(2);
+
+var _analytics2 = _interopRequireDefault(_analytics);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var Settings = __webpack_require__(2);
+var Settings = __webpack_require__(3);
 
 /***/ }),
 /* 1 */
@@ -186,6 +192,58 @@ function createAlertWindow(context) {
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = googleAnalytics;
+function googleAnalytics(context, category, action, label, value) {
+  var trackingID = "UA-128191866-1";
+  var uuidKey = "google.analytics.uuid";
+  var url = "https://www.google-analytics.com/collect?v=1";
+  var uuid = NSUserDefaults.standardUserDefaults().objectForKey(uuidKey);
+
+  if (!uuid) {
+    uuid = NSUUID.UUID().UUIDString();
+    NSUserDefaults.standardUserDefaults().setObject_forKey(uuid, uuidKey);
+  }
+
+  // Tracking ID
+  url += "&tid=" + trackingID;
+  // Source
+  url += "&ds=sketch" + MSApplicationMetadata.metadata().appVersion;
+  // Client ID
+  url += "&cid=" + uuid;
+  // pageview, screenview, event, transaction, item, social, exception, timing
+  url += "&t=event";
+  // App Name
+  url += "&an=" + encodeURI(context.plugin.name());
+  // App Version
+  url += "&av=" + context.plugin.version();
+  // Event category
+  url += "&ec=" + encodeURI(category);
+  // Event action
+  url += "&ea=" + encodeURI(action);
+  // Event label
+  if (label) {
+    url += "&el=" + encodeURI(label);
+  }
+  // Event value
+  if (value) {
+    url += "&ev=" + encodeURI(value);
+  }
+
+  var session = NSURLSession.sharedSession(),
+      task = session.dataTaskWithURL(NSURL.URLWithString(NSString.stringWithString(url)));
+  task.resume();
+}
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports) {
 
 module.exports = require("sketch/settings");

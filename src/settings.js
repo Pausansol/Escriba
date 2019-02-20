@@ -1,7 +1,9 @@
 import createAlertWindow from './create-alert-window'
+import googleAnalytics from './analytics'
 var Settings = require('sketch/settings')
 
 export default function(context){
+  googleAnalytics(context, "Escriba settings", "Open")
 
 	// create the alertWindow UI
 	const alertWindow = createAlertWindow(context);
@@ -74,5 +76,6 @@ export default function(context){
 		Settings.setSettingForKey('ValuetextStyle', textStyleCheckbox.state())
 		Settings.setSettingForKey('ValuestringValue', stringValueCheckbox.state())
 		Settings.setSettingForKey('ValuesymbolID', symbolIDCheckbox.state())
+    googleAnalytics(context, "Escriba settings", "Save")
   }
 }

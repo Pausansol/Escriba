@@ -48,6 +48,6 @@ Select your preferences in `Plugins/Escriba/Settings` menu:
 
 
 ## License
-Copyright (c) 2018 Pablo Sánchez (Pausansol).
+Copyright (c) 2019 Pablo Sánchez (Pausansol).
 
 See [LICENSE.md](https://github.com/pausansol/escriba/blob/master/LICENSE.md) for further details.

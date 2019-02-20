@@ -3,11 +3,11 @@
   <channel>
     <title>Escriba</title>
     <link>https://github.com/Pausansol/Escriba</link>
-    <description>Escriba, copy and paste symbol overrides</description>
+    <description>Escriba: copy and paste symbol overrides</description>
     <language>en</language>
     <item>
       <title>Version 1.0.0</title>
-      <enclosure url="https://github.com/Pausansol/Camilo/archive/master.zip" sparkle:version="1.0.0"/>
+      <enclosure url="https://github.com/Pausansol/Escriba/archive/master.zip" sparkle:version="1.0.0"/>
     </item>
   </channel>
 </rss>
