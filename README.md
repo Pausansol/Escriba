@@ -24,11 +24,11 @@ Symbols
 
 layerStyles
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteTextStyle.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteLayerStyle.gif'>
 
 textStyles
 
-<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteLayerStyle.gif'>
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/pasteTextStyle.gif'>
 
 Text content
 
