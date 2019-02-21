@@ -5,7 +5,7 @@ Copy & Paste symbol overrides for Sketch 53.
 
 ## Install
 
-* Download and install the `Escriba.sketchplugin` zip file [here](https://github.com/Pausansol/Escriba/releases/download/v1.0/Escriba.sketchplugin.zip).
+* Download and install the `Escriba.sketchplugin` zip file [here](https://github.com/Pausansol/Escriba/releases/download/v1.0.1/Escriba.sketchplugin.zip).
 
 ## How it works?
 
