@@ -84,12 +84,21 @@ exports['default'] = function (context) {
 	var selectedOverrides = context.document.documentData().selectedOverrides();
 	if (selectedOverrides.length == 1) {
 		selectedOverrides.forEach(function (selectedOverride) {
-			var tokens = selectedOverride.split('#');
-			var element = tokens[tokens.length - 1];
-			var tokensSplit = element.split('_');
-			var selectedOverrideId = tokensSplit[tokensSplit.length - 2];
-			(0, _analytics2['default'])(context, "Escriba Initiated", "Copy selected", selectedOverrideId);
-			copySelected(selectedOverrideId, context);
+			if (selectedOverride.includes('/')) {
+				var tokens = selectedOverride.split('/');
+				var element = tokens[tokens.length - 1];
+				var tokensSplit = element.split('_');
+				var selectedOverrideId = tokensSplit[tokensSplit.length - 2];
+				(0, _analytics2['default'])(context, "Escriba Initiated", "Copy selected", selectedOverrideId);
+				copySelected(selectedOverrideId, context);
+			} else {
+				var tokens = selectedOverride.split('#');
+				var element = tokens[tokens.length - 1];
+				var tokensSplit = element.split('_');
+				var selectedOverrideId = tokensSplit[tokensSplit.length - 2];
+				(0, _analytics2['default'])(context, "Escriba Initiated", "Copy selected", selectedOverrideId);
+				copySelected(selectedOverrideId, context);
+			}
 		});
 	}
 	if (selectedOverrides.length < 1) {

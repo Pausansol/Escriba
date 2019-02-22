@@ -33,12 +33,21 @@ export default function(context){
 const selectedOverrides = context.document.documentData().selectedOverrides();
 	if (selectedOverrides.length > 0){
 		selectedOverrides.forEach(function(selectedOverride){
-			var tokens = selectedOverride.split('#')
-			var element = tokens[tokens.length-1] 
-			var tokensSplit = element.split('_')
-			var selectedOverrideId = tokensSplit[tokensSplit.length-2]
-			googleAnalytics(context, "Escriba Initiated", "Paste selected", selectedOverrideId)
-			pasteSelected(selectedOverrideId, context)
+			if(selectedOverride.includes('/')){
+				var tokens = selectedOverride.split('/')
+				var element = tokens[tokens.length-1] 
+				var tokensSplit = element.split('_')
+				var selectedOverrideId = tokensSplit[tokensSplit.length-2]
+				googleAnalytics(context, "Escriba Initiated", "Copy selected", selectedOverrideId);
+				pasteSelected(selectedOverrideId, context)
+			} else {
+				var tokens = selectedOverride.split('#')
+				var element = tokens[tokens.length-1] 
+				var tokensSplit = element.split('_')
+				var selectedOverrideId = tokensSplit[tokensSplit.length-2]
+				googleAnalytics(context, "Escriba Initiated", "Copy selected", selectedOverrideId);
+				pasteSelected(selectedOverrideId, context)
+			}
 		})	
 	} else {
 		UI.message('⚠️ Select one Symbol override to paste ⚠️')

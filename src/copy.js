@@ -25,13 +25,23 @@ export default function(context) {
   const selectedOverrides = context.document.documentData().selectedOverrides();
 	if (selectedOverrides.length == 1){
 		selectedOverrides.forEach(function(selectedOverride){
-			var tokens = selectedOverride.split('#')
+			if(selectedOverride.includes('/')){
+				var tokens = selectedOverride.split('/')
+				var element = tokens[tokens.length-1] 
+				var tokensSplit = element.split('_')
+				var selectedOverrideId = tokensSplit[tokensSplit.length-2]
+				googleAnalytics(context, "Escriba Initiated", "Copy selected", selectedOverrideId);
+				copySelected(selectedOverrideId, context)
+
+			} else {
+				var tokens = selectedOverride.split('#')
 			var element = tokens[tokens.length-1] 
 			var tokensSplit = element.split('_')
 			var selectedOverrideId = tokensSplit[tokensSplit.length-2]
 			googleAnalytics(context, "Escriba Initiated", "Copy selected", selectedOverrideId);
 			copySelected(selectedOverrideId, context)
-			})	
+			}
+		})	
 	}
 	if (selectedOverrides.length < 1){
 		UI.message('⚠️ Select one Symbol override to copy ⚠️')

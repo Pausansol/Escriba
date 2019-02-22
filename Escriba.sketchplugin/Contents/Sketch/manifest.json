@@ -31,7 +31,7 @@
       "settings-identifier"
     ]
   },
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Copy & Paste overrides",
   "name": "Escriba",
   "disableCocoaScriptPreprocessor": true,
