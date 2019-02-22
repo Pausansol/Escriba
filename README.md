@@ -3,6 +3,9 @@
 ## Overview
 Copy & Paste symbol overrides for Sketch 53.
 
+## New in v1.1
+Added support for nested symbol overrides
+
 ## Install
 
 * Download and install the `Escriba.sketchplugin` zip file [here](https://github.com/Pausansol/Escriba/releases/download/v1.0.1/Escriba.sketchplugin.zip).
