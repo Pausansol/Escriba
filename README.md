@@ -14,6 +14,8 @@ Two options:
 
 * With Sketch Runner, just go to the `install` command and search for `Escriba`. Runner allows you to manage plugins and do much more to speed up your workflow in Sketch.
 
+<img src='https://raw.githubusercontent.com/pausansol/escriba/master/images/InstallwithRunner.png' width="500">
+
 ## How it works?
 
 It's simple:
