@@ -8,7 +8,11 @@ Added support for nested symbol overrides
 
 ## Install
 
+Two options:
+
 * Download and install the `Escriba.sketchplugin` zip file [here](https://github.com/Pausansol/Escriba/releases/download/v1.0.1/Escriba.sketchplugin.zip).
+
+* With Sketch Runner, just go to the `install` command and search for `Escriba`. Runner allows you to manage plugins and do much more to speed up your workflow in Sketch.
 
 ## How it works?
 
